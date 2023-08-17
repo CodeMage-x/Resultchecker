@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Javascript Function</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		
+			<!-- CSS styles -->
+		<style type="text/css">
+			
+		</style>
+	</head>
+	
+	<body class="">
+		<div class="container-fluid">
+			<div class="row mt-4">
+				<div class="col-md">
+				<h2>Result Checker</h2>
+				<p class="text-warning"><span class="text-danger">*</span>Please enter your exam score for each subject</p>
+					<table class="table table-light">
+						<thead class="table-primary">
+							<tr>
+								<th>S/N</th>
+								<th>Subject</th>
+								<th>Score</th>
+								<th>Grade</th>
+								<th>Grade Point</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1.</td>
+								<td>English Language</td>
+								<td><input type="text" name="score1" id="score1" class="form-control" onkeyup="
+									var score1 = this.value;
+									document.getElementById('grade1').value = exam(score1);
+									document.getElementById('gp1').value = result(score1);
+								"></td>
+								<td><input type="text" name="grade1" id="grade1" class="form-control" readonly></td>
+								<td><input type="text" name="gp1" id="gp1" class="form-control" readonly></td>
+							</tr>
+							<tr>
+								<td>2.</td>
+								<td>Mathematics</td>
+								<td><input type="text" name="score2" id="score2" class="form-control" onkeyup="
+									var score2 = this.value;
+									document.getElementById('grade2').value = exam(score2);
+									document.getElementById('gp2').value = result(score2);
+								"></td>
+								<td><input type="text" name="grade2" id="grade2" class="form-control" readonly></td>
+								<td><input type="text" name="gp2" id="gp2" class="form-control" readonly></td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td>Physics</td>
+								<td><input type="text" name="score3" id="score3" class="form-control" onkeyup="
+									var score3 = this.value;
+									document.getElementById('grade3').value = exam(score3);
+									document.getElementById('gp3').value = result(score3);
+								"></td>
+								<td><input type="text" name="grad3" id="grade3" class="form-control" readonly></td>
+								<td><input type="text" name="gp3" id="gp3" class="form-control" readonly></td>
+							</tr>
+							<tr>
+								<td>4.</td>
+								<td>Chemistry</td>
+								<td><input type="text" name="score4" id="score4" class="form-control" onkeyup="
+									var score4 = this.value;
+									document.getElementById('grade4').value = exam(score4);
+									document.getElementById('gp4').value = result(score4);
+								"></td>
+								<td><input type="text" name="grade4" id="grade4" class="form-control" readonly></td>
+								<td><input type="text" name="gp4" id="gp4" class="form-control" readonly></td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>Biology</td>
+								<td><input type="text" name="score5" id="score5" class="form-control" onkeyup="
+									var score5 = this.value;
+									document.getElementById('grade5').value = exam(score5);
+									document.getElementById('gp5').value = result(score5);
+								"></td>
+								<td><input type="text" name="grade5" id="grade5" class="form-control" readonly></td>
+								<td><input type="text" name="gp5" id="gp5" class="form-control" readonly></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<button type="button" class="btn-lg btn-success" onclick='check()'>Check Result
+					</button><br>
+				</div>
+			</div>
+			
+			<div class="row mt-2">		
+				<div class="col-md-2">
+					<p><b>Total Score =</b><input type="text" name="tls" id="tls" class="form-control" readonly>
+					</p>
+					
+					<p><b>Average Score =</b><input type="text" name="avs" id="avs" class="form-control" readonly></p>
+				</div>
+				
+				<div class="col-md-3">
+					<p class="col-6"><b>GPA =</b><input type="text" name="gpa" id="gpa" class="form-control" readonly>
+					</p>
+					
+					<p><b>Remarks:</b><input type="text" name="remark" id="remark" class="form-control" readonly></span></p>
+				</div>
+				
+				<div class="col-md-2"><img src="" id="icon" class="img-fluid"></div>
+			</div>
+		</div>
+		
+			<!-- external JS -->
+		<script src="js/index.js"></script>
+	</body>
+</html>
